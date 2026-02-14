@@ -1,0 +1,76 @@
+<!-- screen_time.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Screen Time Limits</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .tips-list {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .tips-list li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .suggestion-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0077b6;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .suggestion-btn:hover {
+            background: #005a8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Set Screen Time Limits</h1>
+        <p>Control your screen usage and build healthier habits. Here are some effective ways to limit screen time:</p>
+
+        <ul class="tips-list">
+            <li>📊 Use apps like **Screen Time** (iOS) or **Digital Wellbeing** (Android) to track usage.</li>
+            <li>⏳ Set daily limits for social media and entertainment apps.</li>
+            <li>⏰ Schedule **device-free hours**, especially before bedtime.</li>
+            <li>🛑 Enable **app restrictions** to avoid unnecessary distractions.</li>
+            <li>📵 Keep devices away from your bedroom to improve sleep quality.</li>
+            <li>🗓️ Plan **offline activities** like reading, exercising, or socializing.</li>
+        </ul>
+
+        <a href="/" class="suggestion-btn">Back to Home</a>
+    </div>
+</body>
+</html>

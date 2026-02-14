@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medilab</title>
+  <meta name="description" content="REVIVE a 3 minute stress test">
+  <meta name="keywords" content="stress test using Machine learning">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style4.css')}}">
+  <style>
+    .progress {
+      height: 10px;
+      margin-bottom: 20px;
+    }
+    .progress-bar {
+      transition: width 0.5s ease-in-out;
+    }
+    .suggestion-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .suggestion-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner">
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="{{url_for('static',filename='img/logo.png')}}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class=""><a href="/">Home</a></li>
+                <li class=""><a href="prediction1">Quiz Based Test</a></li>
+                <li class=""><a href="/sentiment">Sentiment Based Test</a></li>
+                <li class="active"><a href="">Result</a></li>
+                <li class=""><a href="upload">Upload</a></li>
+                <li class=""><a href="chart">Accuracy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center"></div>
+            <div class="banner-text text-center">
+              {% block code_block %}<h1 class="white">{{result}}</h1>{% endblock %}
+              <p>To Know more about Impact and Suggestion scroll Below</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-sm-9 more-features-box">
+            
+            <div class="more-features-box-text">
+              <h3>Stage 1. No Impact of Gadget Addictions. ✅</h3>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 5%"></div>
+              </div>
+              <p>Minimal gadget usage with no noticeable effects on academic performance, social life, or mental well-being.</p>
+              <a href="{{ url_for('healthy_tips') }}" class="suggestion-btn">Healthy Gadget Tips</a>
+
+              
+            </div>
+
+            <div class="more-features-box-text">
+              <h3>Stage 2. Mild Impact of Gadget Addictions. ⚠️</h3>
+              <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 40%"></div>
+              </div>
+              <p>Increased screen time leading to minor distractions, slight academic decline, and reduced social interactions.</p>
+              <a href="{{ url_for('screen_time') }}" class="suggestion-btn">Set Screen Time Limits</a>
+            </div>
+
+            <div class="more-features-box-text">
+              <h3>Stage 3.  Frequent Usage with Noticeable Impact ❗</h3>
+              <div class="progress">
+                <div class="progress-bar bg-orange" style="width: 70%"></div>
+              </div>
+              <p>Significant screen time affecting sleep patterns, productivity, and social life, with noticeable stress and anxiety.</p>
+              <a href= "{{ url_for('digital_detox') }} " class="suggestion-btn">Try a Digital Detox</a>
+            </div>
+
+            <div class="more-features-box-text">
+              <h3>Stage 4.High Usage with Significant Impact  🚨</h3>
+              <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 90%"></div>
+              </div>
+              <p>Excessive gadget use leading to academic failure, social isolation, emotional distress, and dependency symptoms.</p>
+              <a href="{{ url_for('professional_help') }} " class="suggestion-btn">Get Professional Help</a>
+            </div>
+
+           
+            <div class="more-features-box-text">
+              <h3>Stage 5. Severe Dependency with Major Impact 🚨</h3>
+              <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 100%"></div>
+              </div>
+             <p> Severe digital addiction disrupting mental health, reducing cognitive abilities, and increasing emotional instability. Symptoms may include sleep deprivation, heightened anxiety, and detachment from real-world responsibilities.</p>
+              <a href="{{ url_for('rehabilitation') }}" class="suggestion-btn">Find a Rehab Center</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

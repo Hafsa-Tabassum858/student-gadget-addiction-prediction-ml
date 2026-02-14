@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Afreen ",
+        "email": "afreen123@gmail.com",
+        "subject": "help",
+        "message": "i am addicted to my phone ..help me"
+    },
+    {
+        "id": 2,
+        "name": "Afreen ",
+        "email": "afreen123@gmail.com",
+        "subject": "help",
+        "message": "i am addicted to my phone ..help me"
+    },
+    {
+        "id": 3,
+        "name": "zuha",
+        "email": "zuhakareem22@gmail.com",
+        "subject": "help",
+        "message": "i am too much addicted to my phone .even if i am sleepy ,i cant sleep .help me !!"
+    },
+    {
+        "id": 4,
+        "name": "zuha",
+        "email": "zuhakareem22@gmail.com",
+        "subject": "help",
+        "message": "i am addicted to my phone .please help me!!"
+    },
+    {
+        "id": 5,
+        "name": "zuha",
+        "email": "zuhakareem22@gmail.com",
+        "subject": "help",
+        "message": "i am addicted to my phone .please help me!!"
+    },
+    {
+        "id": 6,
+        "name": "uzma",
+        "email": "uzmakareem22@gmail.com",
+        "subject": "help",
+        "message": "i am very stressed .please help me!!"
+    },
+    {
+        "id": 7,
+        "name": "hafsa",
+        "email": "hafsa123@gmail.com",
+        "subject": "help",
+        "message": "i am very stressed "
+    }
+]

@@ -1,0 +1,76 @@
+<!-- healthy_tips.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Gadget Usage Tips</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .tip-list {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .tip-list li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .suggestion-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .suggestion-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Healthy Gadget Usage Tips</h1>
+        <p>To maintain a balanced digital lifestyle, follow these simple tips:</p>
+
+        <ul class="tip-list">
+            <li>🔹 Limit screen time to avoid eye strain and mental fatigue.</li>
+            <li>🔹 Take a 5-minute break after every 30-40 minutes of screen usage.</li>
+            <li>🔹 Engage in outdoor activities to refresh your mind.</li>
+            <li>🔹 Use blue light filters or night mode on devices to reduce strain.</li>
+            <li>🔹 Maintain a proper sleep schedule by avoiding screens before bedtime.</li>
+            <li>🔹 Practice the 20-20-20 rule: Every 20 minutes, look at something 20 feet away for 20 seconds.</li>
+        </ul>
+
+        <a href="/" class="suggestion-btn">Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!-- rehabilitation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehabilitation & Recovery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1e;
+            text-align: center;
+            padding: 20px;
+            color: #f8f9fa;
+        }
+        .container {
+            max-width: 850px;
+            background: #282c34;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(255, 0, 0, 0.5);
+            margin: auto;
+        }
+        h1 {
+            color: #ff3b3b;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            color: #e4e4e4;
+            line-height: 1.6;
+        }
+        .warning {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+        .list-section {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .list-section li {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #f8d7da;
+        }
+        .contact-box {
+            margin-top: 20px;
+            padding: 20px;
+            background: #4a4a4a;
+            border-left: 5px solid #ff3b3b;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #f8f9fa;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #ff3b3b;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Rehabilitation & Recovery 🚨</h1>
+        <p class="warning">**Severe digital addiction can cause lasting damage to mental health, relationships, and daily life.** If you feel trapped, seek immediate help.</p>
+        
+        <p>Recovery is possible with the right intervention. Our structured rehabilitation programs focus on:</p>
+
+        <ul class="list-section">
+            <li>🔴 **Detoxification Therapy** – Guided reduction of screen exposure.</li>
+            <li>🔵 **Intensive Counseling & Therapy** – One-on-one sessions with professionals.</li>
+            <li>🟡 **Behavioral Modification Plans** – Breaking digital dependence.</li>
+            <li>🟢 **Social Reintegration Support** – Restoring real-world connections.</li>
+            <li>🟠 **Wellness & Mindfulness Practices** – Healing through balanced living.</li>
+        </ul>
+
+        <div class="contact-box">
+            <p>🚨 **Emergency Help?** Contact a rehabilitation center or mental health service:</p>
+            <p><strong>📞 1-800-662-HELP (USA) | 📞 9152987821 (India) | 📞 116 123 (UK)</strong></p>
+        </div>
+
+        <a href="{{ url_for('professional_help') }}" class="btn">Get Immediate Help</a>
+    </div>
+</body>
+</html>

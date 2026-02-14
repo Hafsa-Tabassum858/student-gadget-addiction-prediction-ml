@@ -1,0 +1,76 @@
+<!-- digital_detox.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Detox</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff6f61;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .detox-list {
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .detox-list li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .suggestion-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .suggestion-btn:hover {
+            background: #e85a50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Try a Digital Detox</h1>
+        <p>Reduce screen dependence, engage in physical activities, and practice mindfulness. Take control of your screen time and reclaim your focus!</p>
+
+        <ul class="detox-list">
+            <li>📴 Set device-free hours during the day.</li>
+            <li>🏃‍♂️ Engage in outdoor activities like walking or exercising.</li>
+            <li>📚 Read a book or engage in a hobby instead of scrolling.</li>
+            <li>🍽️ Practice screen-free meals with family and friends.</li>
+            <li>🧘‍♀️ Meditate and practice mindfulness for mental clarity.</li>
+            <li>🌿 Spend time in nature to refresh your mind.</li>
+        </ul>
+
+        <a href="/" class="suggestion-btn">Back to Home</a>
+    </div>
+</body>
+</html>
